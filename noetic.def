@@ -12,8 +12,6 @@ From: ubuntu:20.04
   apt-get -y install python3-catkin-tools
   DEBIAN_FRONTEND=noninteractive /usr/bin/apt-get install -y -q --force-yes ros-noetic-desktop-full
 
-
-
 %environment
   export ROS_ROOT=/opt/ros/noetic/share/ros
   export ROS_PACKAGE_PATH=/opt/ros/noetic/share:/opt/ros/noetic/stacks
