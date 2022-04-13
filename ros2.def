@@ -12,21 +12,21 @@ From: ubuntu:20.04
   apt-get -y install python3-catkin-tools
   DEBIAN_FRONTEND=noninteractive /usr/bin/apt-get install -y -q --force-yes ros-foxy-desktop
   #echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
-  sh -c 'echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc'
+  #sh -c 'echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc'
 
 
 %environment
-  export ROS_ROOT=/opt/ros/foxy/share/ros
-  export ROS_PACKAGE_PATH=/opt/ros/foxy/share:/opt/ros/foxy/stacks
-  export ROS_MASTER_URI=http://localhost:11311
-  export LD_LIBRARY_PATH=/opt/ros/foxy/lib:/.singularity.d/libs
-  export CPATH=/opt/ros/foxy/include
-  export PATH=/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-  export PYTHONPATH=/opt/ros/foxy/lib/python3/dist-packages
-  export PKG_CONFIG_PATH=/opt/ros/foxy/lib/pkgconfig
-  export CMAKE_PREFIX_PATH=/opt/ros/foxy
-  export ROS_ETC_DIR=/opt/ros/foxy/etc/ros
-
   export ROS_VERSION=2
   export ROS_PYTHON_VERSION=3
   export ROS_DISTRO=foxy
+
+  #export ROS_ROOT=/opt/ros/foxy/share/ros
+  #export ROS_PACKAGE_PATH=/opt/ros/foxy/share:/opt/ros/foxy/stacks
+  #export ROS_MASTER_URI=http://localhost:11311
+  #export LD_LIBRARY_PATH=/opt/ros/foxy/lib:/.singularity.d/libs
+  #export CPATH=/opt/ros/foxy/include
+  #export PATH=/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+  #export PYTHONPATH=/opt/ros/foxy/lib/python3/dist-packages
+  #export PKG_CONFIG_PATH=/opt/ros/foxy/lib/pkgconfig
+  #export CMAKE_PREFIX_PATH=/opt/ros/foxy
+  #export ROS_ETC_DIR=/opt/ros/foxy/etc/ros
